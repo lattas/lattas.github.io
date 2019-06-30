@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3D Reconstruction on Alexander Lattas</title>
+    <link>/tags/3d-reconstruction/</link>
+    <description>Recent content in 3D Reconstruction on Alexander Lattas</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Alexander Lattas {year}</copyright>
+    <lastBuildDate>Fri, 28 Jun 2019 22:25:36 +0100</lastBuildDate>
+    
+	    <atom:link href="/tags/3d-reconstruction/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title> Multi-View Facial Capture Using Binary Spherical Gradient Illumination</title>
+      <link>/publication/multi-view-facial/</link>
+      <pubDate>Fri, 28 Jun 2019 22:25:36 +0100</pubDate>
+      
+      <guid>/publication/multi-view-facial/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

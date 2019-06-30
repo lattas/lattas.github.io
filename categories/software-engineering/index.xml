@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software Engineering on Alexander Lattas</title>
+    <link>/categories/software-engineering/</link>
+    <description>Recent content in Software Engineering on Alexander Lattas</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Alexander Lattas {year}</copyright>
+    <lastBuildDate>Fri, 28 Jun 2019 22:25:36 +0100</lastBuildDate>
+    
+	    <atom:link href="/categories/software-engineering/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title> Multi-View Facial Capture Using Binary Spherical Gradient Illumination</title>
+      <link>/publication/multi-view-facial/</link>
+      <pubDate>Fri, 28 Jun 2019 22:25:36 +0100</pubDate>
+      
+      <guid>/publication/multi-view-facial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Echoes From Space: Grouping Commands with Large-Scale Telemetry Data</title>
+      <link>/publication/echoes-from-space/</link>
+      <pubDate>Sun, 03 Jun 2018 22:25:36 +0100</pubDate>
+      
+      <guid>/publication/echoes-from-space/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
