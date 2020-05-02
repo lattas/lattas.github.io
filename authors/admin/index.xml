@@ -11,21 +11,5 @@
 	    <atom:link href="/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title></title>
-      <link>/authors/admin/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/authors/admin/</guid>
-      <description>&lt;p&gt;I am researching how AI can generate realistic virtual humans, as a PhD student at Imperial College London and a Computer Vision Scientist at Facesoft!&lt;/p&gt;
-
-&lt;p&gt;I have studied Computer Science and Innovation Management at Imperial College London, University College London and the Athens University of Economics and Business.&lt;/p&gt;
-
-&lt;p&gt;At the moment I am collecting high-quality 3D human faces with a Light Stage and exploring how Machine Learning can be used to reconstruct them from single images.&lt;/p&gt;
-
-&lt;p&gt;In the past, I spent some very interesting time at Oracle and co-founded one of Greece&amp;rsquo;s biggest youth entrepreneurship networks.&lt;/p&gt;
-</description>
-    </item>
-    
   </channel>
 </rss>

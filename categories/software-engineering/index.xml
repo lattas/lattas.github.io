@@ -7,19 +7,10 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Alexander Lattas {year}</copyright>
-    <lastBuildDate>Sun, 28 Jul 2019 22:25:36 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 03 Jun 2018 22:25:36 +0100</lastBuildDate>
     
 	    <atom:link href="/categories/software-engineering/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title> Multi-View Facial Capture Using Binary Spherical Gradient Illumination</title>
-      <link>/publication/multi-view-facial/</link>
-      <pubDate>Sun, 28 Jul 2019 22:25:36 +0100</pubDate>
-      
-      <guid>/publication/multi-view-facial/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Echoes From Space: Grouping Commands with Large-Scale Telemetry Data</title>
