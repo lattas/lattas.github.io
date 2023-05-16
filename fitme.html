@@ -1,43 +1,327 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FitMe</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f0f0f0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-    }
-    
-    .container {
-        text-align: center;
-        background-color: #ffffff;
-        padding: 40px;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    
-    h1 {
-        font-size: 36px;
-        margin-bottom: 20px;
-    }
-    
-    p {
-        font-size: 18px;
-        color: #777;
-    }
-</style>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="FitMe: Deep Photorealistic 3D Morphable Model Avatars (CVPR 2023)">
+  <meta name="keywords" content="FitMe, Avatars, GAN, StyleGAN, BRDF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FitMe: Deep Photorealistic 3D Morphable Model Avatars</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./fitme/css/bulma.min.css">
+  <link rel="stylesheet" href="./fitme/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./fitme/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./fitme/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./fitme/css/index.css">
+  <link rel="icon" href="./fitme/images/favicon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./fitme/js/fontawesome.all.min.js"></script>
+  <script src="./fitme/js/bulma-carousel.min.js"></script>
+  <script src="./fitme/js/bulma-slider.min.js"></script>
+  <script src="./fitme/js/index.js"></script>
 </head>
 <body>
-<div class="container">
-    <h1>Coming Soon</h1>
-    <p>Project page coming soon. Stay tuned for updates!</p>
-</div>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://alexlattas.com">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Related Papers
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://github.com/lattas/avatarme">
+            AvatarMe++
+          </a>
+          <a class="navbar-item" href="https://foivospar.github.io/Relightify">
+            Relightify
+          </a>
+          <a class="navbar-item" href="https://wp.doc.ic.ac.uk/rgi/project/desktop-based-high-quality-facial-capture/">
+            Desktop-based Facial Capture
+          </a>
+          <a class="navbar-item" href="https://github.com/barisgecer/TBGAN">
+            TBGAN
+          </a>
+          <a class="navbar-item" href="https://github.com/steliosploumpis/Universal_Head_3DMM">
+            Universal Head Model
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">FitMe: Deep Photorealistic 3D Morphable Model Avatars</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://alexlattas.com">Alexandros Lattas</a>,</span>
+            <span class="author-block">
+              <a href="https://moschoglou.com/">Stylianos Moschoglou</a>,</span>
+            <span class="author-block">
+              <a href="https://www.ploumpis.com/">Stylianos Ploumpis</a>,
+            </span>
+            <br>
+            <span class="author-block">
+              <a href="https://barisgecer.github.io/">Baris Gecer</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://jiankangdeng.github.io/">Jiankang Deng</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.imperial.ac.uk/people/s.zafeiriou">Stefanos Zafeiriou</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Imperial College London</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="'#'"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./fitme/videos/teaser_single_lq.mp4"
+                type="video/mp4">
+      </video>
+      <br><br>
+      <h2 class="subtitle has-text-centered">
+        FitMe turns arbitrary facial images to relightable facial avatars,
+        directly usable in common gaming and rendering engines.
+      </h2>
+      <br>
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./fitme/videos/selfie1.mp4"
+                type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            In this paper, we introduce FitMe, 
+            a facial reflectance model and a differentiable rendering optimization pipeline, 
+            that can be used to acquire high-fidelity renderable human avatars 
+            from single or multiple images.
+          </p>
+          <p>
+            The model consists of a multi-modal style-based generator,
+            that captures facial appearance in terms of diffuse and specular reflectance,
+            and a PCA-based shape model.
+            We employ a fast differentiable rendering process 
+            that can be used in an optimization pipeline,
+            while also achieving photorealistic facial shading.
+            Our optimization process accurately captures both the facial reflectance 
+            and shape in high-detail,
+            by exploiting the expressivity of the style-based latent representation 
+            and of our shape model.
+          </p>
+          <p>
+            FitMe achieves state-of-the-art reflectance acquisition 
+            and identity preservation on single ``in-the-wild'' facial images,
+            while it produces impressive scan-like results,
+            when given multiple unconstrained facial images pertaining 
+            to the same identity.
+            In contrast with recent implicit avatar reconstructions,
+            FitMe requires only one minute 
+            and produces relightable mesh and texture-based avatars, 
+            that can be used by end-user applications.
+          </p>
+          <br>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+
+
+    <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="coming-soon"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div> -->
+    <!-- </div> -->
+  <!-- </div> -->
+
+
+    <!-- Method. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Method</h2>
+      </h2>
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./fitme/videos/method.mp4"
+                type="video/mp4">
+      </video>
+      <p>
+        In two steps,
+        we optimize the latent vector of the generator, the shape and rendering parameters,
+        by combining 3DMM fitting, GAN inversion and GAN tuning.
+      </p>
+      <br>
+      <p>
+        The optimization is guided by accurate diffuse and specular differentiable rendering. 
+      </p>
+      </div>
+    </div>
+    <!--/ Method. -->
+
+    <!-- Method. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Single-image Results</h2>
+      </h2>
+      <img src="./fitme/images/single.png" class="hero-body" 
+              alt="Single Image Results"/>
+      </div>
+    </div>
+    <p>
+      FitMe can be optimized for arbitrary facial images,
+      from a single internet sourced picture,
+      to multiple selfie photographs.
+    </p>
+    <!--/ Method. -->
+
+  </div>
+</section>
+
+  <section class="section">
+     <!-- Selfie. -->
+     <div class="columns is-centered">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3">Selfie Results</h2>
+      </h2>
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./fitme/videos/selfie2.mp4"
+                type="video/mp4">
+      </video>
+      <br><br>
+      <p>
+        Even with three unconstrained quick selfies of a subject,
+        in an arbitrary environment and illumination,
+        FitMe produces high-fidelity relfectance and shape 
+        that can be photorealistically relighted.
+      </p>
+      </div>
+    </div>
+    <!--/ Selfie. -->
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{lattas2023fitme,
+  author    = {Lattas, Alexandros and Stylianos, Moschoglou and Stylianos, Ploumpis and
+               Gecer, Baris and Deng, Jianakang and Zafeiriou, Stefanos},
+  title     = {FitMe: Deep Photorealistic 3D Morphable Model Avatars},
+  journal   = {CVPR},
+  year      = {2023},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="#">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            The template is borrowed from <a
+            href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>
+            and is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
