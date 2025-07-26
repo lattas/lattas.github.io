@@ -1,1055 +1,427 @@
 <!DOCTYPE html>
-<html lang="en-us">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="generator" content="Source Themes Academic 4.3.1" />
-
-        <meta name="author" content="Alexandros Lattas" />
-
-        <meta name="description" content="3D Computer Vision PhD" />
-
-        <link rel="alternate" hreflang="en-us" href="/" />
-
-        <meta name="theme-color" content="#2962ff" />
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous" />
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled />
-
-        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono" />
-
-        <link rel="stylesheet" href="/css/academic.min.a9a796b4dba28c78fc94d2550173437e.css" />
-
-        <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Alexandros Lattas" />
-        <link rel="feed" href="/index.xml" type="application/rss+xml" title="Alexandros Lattas" />
-
-        <link rel="manifest" href="/site.webmanifest" />
-        <link rel="icon" type="image/png" href="/img/icon.png" />
-        <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png" />
-
-        <link rel="canonical" href="/" />
-
-        <meta property="twitter:card" content="summary" />
-
-        <meta property="og:site_name" content="Alexandros Lattas" />
-        <meta property="og:url" content="/" />
-        <meta property="og:title" content="Alexandros Lattas" />
-        <meta property="og:description" content="3D Computer Vision PhD" />
-        <meta property="og:image" content="/img/icon-192.png" />
-        <meta property="og:locale" content="en-us" />
-
-        <meta property="og:updated_time" content="2020-05-01T22:25:36&#43;01:00" />
-
-        <title>Alexandros Lattas</title>
-    </head>
-
-    <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
-        <aside class="search-results" id="search">
-            <div class="container">
-                <section class="search-header">
-                    <div class="row no-gutters justify-content-between mb-3">
-                        <div class="col-6">
-                            <h1>Search</h1>
-                        </div>
-                        <div class="col-6 col-search-close">
-                            <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-
-                    <div id="search-box">
-                        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off" autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search" />
-                    </div>
-                </section>
-                <section class="section-search-results">
-                    <div id="search-hits"></div>
-                </section>
-            </div>
-        </aside>
-
-        <nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
-            <div class="container">
-                <a class="navbar-brand" href="/"><img src="/img/favicon.png" alt="Alexandros Lattas" /></a>
-
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span><i class="fas fa-bars"></i></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbar">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/#about" data-target="#about"><span>About Me</span></a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="/#publications" data-target="#publications"><span>Publications</span></a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <span class="js-widget-page d-none"></span>
-
-        <section id="about" class="home-section wg-about">
-            <div class="container">
-                <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email person-telephone person-address">
-                    <div class="col-12 col-lg-4">
-                        <div id="profile">
-                            <img class="portrait" src="img/profile.jpg" width="250" itemprop="image" alt="Profile Picture" />
-
-                            <div class="portrait-title">
-                                <h2 itemprop="name">Alexandros Lattas</h2>
-                                <h3 itemprop="jobTitle">Research Scientist</h3>
-
-                                <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-                                    <span itemprop="name"><a href="https://arvr.google.com/"><b><span style="color: #4285F4">G</span><span style="color: #DB4437">o</span><span style="color: #F4B400">o</span><span style="color: #4285F4">g</span><span style="color: #0F9D58">l</span><span style="color: #DB4437">e</span> AR &amp; VR</b></a></span>
-                                </h3>
-                            </div>
-
-                            <link itemprop="url" href="" />
-
-                            <ul class="network-icon" aria-hidden="true">
-                                <li>
-                                    <a itemprop="sameAs" href="mailto:a.lattas@imperial.ac.uk">
-                                        <i class="fas fa-envelope big-icon"></i>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a itemprop="sameAs" href="https://www.linkedin.com/in/lattas/" target="_blank" rel="noopener">
-                                        <i class="fab fa-linkedin big-icon"></i>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a itemprop="sameAs" href="https://twitter.com/alexlattas" target="_blank" rel="noopener">
-                                        <i class="fab fa-twitter big-icon"></i>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a itemprop="sameAs" href="https://scholar.google.co.uk/citations?user=0wJRUlsAAAAJ&amp;hl=en" target="_blank" rel="noopener">
-                                        <i class="ai ai-google-scholar big-icon"></i>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a itemprop="sameAs" href="https://github.com/lattas" target="_blank" rel="noopener">
-                                        <i class="fab fa-github big-icon"></i>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a itemprop="sameAs" href="/files/alexandrosLattas_CV.pdf">
-                                        <i class="ai ai-cv big-icon"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-8" itemprop="description">
-                        <h1>About me</h1>
-
-                        <p>I am researching how we can capture, generate and render realistic virtual humans with AI. I am currently a Research Scientist at Google.</p>
-                        <p>I have a PhD in Computer Science from Imperial College London and MSc in Advanced Computing from Imperial College London.</p>
-                        <p>In the past, I spent some very interesting time at the Imperial spin-off Facesoft, Huawei, Oracle and co-founded a youth entrepreneurship network in Greece.</p>
-
-                        <div class="row">
-                            <div class="col-md-5">
-                                <h3>Interests</h3>
-                                <ul class="ul-interests">
-                                    <li>Generative AI</li>
-
-                                    <li>3D Computer Vision</li>
-
-                                    <li>Humans in AR/VR</li>
-                                </ul>
-                            </div>
-
-                            <div class="col-md-7">
-                                <h3>Education</h3>
-                                <ul class="ul-edu fa-ul">
-                                    <li>
-                                        <i class="fa-li fas fa-graduation-cap"></i>
-                                        <div class="description">
-                                            <p class="course">PhD in Computer Science, 2019 - 2023</p>
-                                            <p class="institution">Imperial College London</p>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <i class="fa-li fas fa-graduation-cap"></i>
-                                        <div class="description">
-                                            <p class="course">MSc in Advanced Computing, 2017 - 2018</p>
-                                            <p class="institution">Imperial College London</p>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <i class="fa-li fas fa-graduation-cap"></i>
-                                        <div class="description">
-                                            <p class="course">Innovation Management, 2015 - 2016</p>
-                                            <p class="institution">University College London (Exchange)</p>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <i class="fa-li fas fa-graduation-cap"></i>
-                                        <div class="description">
-                                            <p class="course">BSc in Management Science and Technology, 2013 - 2017</p>
-                                            <p class="institution">Athens University of Economics and Business</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience" class="home-section wg-experience">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-4 section-heading">
-                        <h1>Experience</h1>
-                    </div>
-                    <div class="col-12 col-lg-8">
-                        <div class="row experience">
-                            <div class="col-auto text-center flex-column d-none d-sm-flex">
-                                <div class="row h-50">
-                                    <div class="col">&nbsp;</div>
-                                    <div class="col">&nbsp;</div>
-                                </div>
-                                <div class="m-2">
-                                    <span class="badge badge-pill border exp-fill">&nbsp;</span>
-                                </div>
-                                <div class="row h-50">
-                                    <div class="col border-right">&nbsp;</div>
-                                    <div class="col">&nbsp;</div>
-                                </div>
-                            </div>
-
-                            <div class="col py-2">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="card-title exp-title text-muted mt-0 mb-1">Research Scientist</h4>
-                                        <h4 class="card-title exp-company text-muted my-0">
-                                            <a href="https://arvr.google.com/" target="_blank" rel="noopener"><a href="https://arvr.google.com/"><b><span style="color: #4285F4">G</span><span style="color: #DB4437">o</span><span style="color: #F4B400">o</span><span style="color: #4285F4">g</span><span style="color: #0F9D58">l</span><span style="color: #DB4437">e</span> AR &amp; VR</b></a></a>
-                                        </h4>
-                                        <div class="text-muted exp-meta">
-                                            Jan 2024 – Present
-
-                                            <span class="middot-divider"></span>
-                                            <span>London, UK</span>
-                                        </div>
-                                        <div class="card-text"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row experience">
-                            <div class="col-auto text-center flex-column d-none d-sm-flex">
-                                <div class="row h-50">
-                                    <div class="col border-right">&nbsp;</div>
-                                    <div class="col">&nbsp;</div>
-                                </div>
-                                <div class="m-2">
-                                    <span class="badge badge-pill border">&nbsp;</span>
-                                </div>
-                                <div class="row h-50">
-                                    <div class="col border-right">&nbsp;</div>
-                                    <div class="col">&nbsp;</div>
-                                </div>
-                            </div>
-
-                            <div class="col py-2">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="card-title exp-title text-muted mt-0 mb-1">Researcher in Computer Vision</h4>
-                                        <h4 class="card-title exp-company text-muted my-0">
-                                            <a href="https://www.noahlab.com.hk/#/home" target="_blank" rel="noopener">Huawei Noah's Ark Lab</a>
-                                        </h4>
-                                        <div class="text-muted exp-meta">
-                                            June 2020 – Jan 2024
-
-                                            <span class="middot-divider"></span>
-                                            <span>London, UK</span>
-                                        </div>
-                                        <div class="card-text"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row experience">
-                            <div class="col-auto text-center flex-column d-none d-sm-flex">
-                                <div class="row h-50">
-                                    <div class="col border-right">&nbsp;</div>
-                                    <div class="col">&nbsp;</div>
-                                </div>
-                                <div class="m-2">
-                                    <span class="badge badge-pill border">&nbsp;</span>
-                                </div>
-                                <div class="row h-50">
-                                    <div class="col border-right">&nbsp;</div>
-                                    <div class="col">&nbsp;</div>
-                                </div>
-                            </div>
-
-                            <div class="col py-2">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="card-title exp-title text-muted mt-0 mb-1">Computer Vision Scientist</h4>
-                                        <h4 class="card-title exp-company text-muted my-0"><a href="https://facesoft.io" target="_blank" rel="noopener">Facesoft</a></h4>
-                                        <div class="text-muted exp-meta">
-                                            Oct 2018 – June 2020
-                                            <span class="middot-divider"></span>
-                                            <span>London, UK</span>
-                                        </div>
-                                        <div class="card-text"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row experience">
-                            <div class="col-auto text-center flex-column d-none d-sm-flex">
-                                <div class="row h-50">
-                                    <div class="col border-right">&nbsp;</div>
-                                    <div class="col">&nbsp;</div>
-                                </div>
-                                <div class="m-2">
-                                    <span class="badge badge-pill border">&nbsp;</span>
-                                </div>
-                                <div class="row h-50">
-                                    <div class="col border-right">&nbsp;</div>
-                                    <div class="col">&nbsp;</div>
-                                </div>
-                            </div>
-
-                            <div class="col py-2">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="card-title exp-title text-muted mt-0 mb-1">Software Engineering Research Associate</h4>
-                                        <h4 class="card-title exp-company text-muted my-0"><a href="https://www.balab.aueb.gr/" target="_blank" rel="noopener">Business Analytics Laboratory</a></h4>
-                                        <div class="text-muted exp-meta">
-                                            Jun 2016 – Feb 2017
-                                            <span class="middot-divider"></span>
-                                            <span>Athens, Greece</span>
-                                        </div>
-                                        <div class="card-text"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row experience">
-                            <div class="col-auto text-center flex-column d-none d-sm-flex">
-                                <div class="row h-50">
-                                    <div class="col border-right">&nbsp;</div>
-                                    <div class="col">&nbsp;</div>
-                                </div>
-                                <div class="m-2">
-                                    <span class="badge badge-pill border">&nbsp;</span>
-                                </div>
-                                <div class="row h-50">
-                                    <div class="col">&nbsp;</div>
-                                    <div class="col">&nbsp;</div>
-                                </div>
-                            </div>
-
-                            <div class="col py-2">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="card-title exp-title text-muted mt-0 mb-1">Co-Founder, Coordinator</h4>
-                                        <h4 class="card-title exp-company text-muted my-0"><a href="https://www.ja-alumni.eu/network" target="_blank" rel="noopener">Junior Achievement Alumni Greece</a></h4>
-                                        <div class="text-muted exp-meta">
-                                            Jun 2013 – Feb 2017
-                                            <span class="middot-divider"></span>
-                                            <span>Athens, Greece</span>
-                                        </div>
-                                        <div class="card-text"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="accomplishments" class="home-section wg-accomplishments">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-4 section-heading">
-                        <h1>Awards</h1>
-                    </div>
-                    <div class="col-12 col-lg-8">
-                        <div class="card experience course">
-                            <div class="card-body">
-                                <h4 class="card-title exp-title text-muted my-0">Full Scholarship for MSc at Imperial College London</h4>
-                                <div class="card-subtitle my-0 article-metadata">
-                                    <a href="https://www.helpe.gr/en/" target="_blank" rel="noopener">Hellenic Petroleum</a><span class="middot-divider"></span>
-
-                                    Oct 2017 – Sep 2018
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card experience course">
-                            <div class="card-body">
-                                <a href="http://bloode.org/" target="_blank" rel="noopener"><h4 class="card-title exp-title text-muted my-0">Social Impact Award, for a novel blood donation platform</h4></a>
-                                <div class="card-subtitle my-0 article-metadata">
-                                    <a href="https://socialimpactaward.net/" target="_blank" rel="noopener">Impact Hub</a><span class="middot-divider"></span>
-
-                                    Jun 2014
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card experience course">
-                            <div class="card-body">
-                                <h4 class="card-title exp-title text-muted my-0">3 Honorary Distinctions on academic performance</h4>
-                                <div class="card-subtitle my-0 article-metadata">
-                                    <a href="https://aueb.gr/en" target="_blank" rel="noopener">Athens University of Economics and Business</a><span class="middot-divider"></span>
-
-                                    Oct 2013 – Jun 2017
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="publications" class="home-section wg-pages">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-4 section-heading">
-                        <h1>Publications</h1>
-                    </div>
-                    <div class="col-12 col-lg-8">
-
-                      <!-- Arc2Face -->
-                      <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-                        <div class="media-body">
-                            <h3 class="article-title mb-0 mt-0" itemprop="name">
-                                <a href="https://arc2face.github.io/" target="_blank" itemprop="url">Arc2Face: A Foundation Model of Human Faces</a>
-                            </h3>
-                            <div class="article-style" itemprop="articleBody">arXiv, Mar 18, 2024</div>
-                            <div class="stream-meta article-metadata">
-                                <div itemprop="author">
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Foivos Paraperas Papantoniou</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Alexandros Lattas</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Stylianos Moschoglou</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Jiankang Deng</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Bernhard Kainz</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Stefanos Zafeiriou</span>
-                                </div>
-                            </div>
-                            <div class="btn-links">
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/pdf/2403.11641.pdf" target="_blank" rel="noopener"> Paper</a>
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arc2face.github.io/" target="_blank" rel="noopener"> Project Page</a>
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/foivospar/Arc2Face" target="_blank" rel="noopener"> Code and Models</a>
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://huggingface.co/FoivosPar/Arc2Face" target="_blank" rel="noopener"> Demo</a>
-                            </div>
-                        </div>
-                        <div class="ml-3">
-                          <img src="img/arc2face.png" itemprop="image" style="max-width: 120px;" />
-                        </div>
-                      </div>
-
-                      <!-- Relightify -->
-                      <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-                        <div class="media-body">
-                            <h3 class="article-title mb-0 mt-0" itemprop="name">
-                                <a href="https://foivospar.github.io/Relightify/" target="_blank" itemprop="url">Relightify: Relightable 3D Faces from a Single Image via Diffusion Models</a>
-                            </h3>
-                            <div class="article-style" itemprop="articleBody"><i>International Conference on Computer Vision 2023 (ICCV)</i>, Oct 5, 2023</div>
-                            <div class="stream-meta article-metadata">
-                                <div itemprop="author">
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Foivos Paraperas Papantoniou</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Alexandros Lattas</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Stylianos Moschoglou</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Stefanos Zafeiriou</span>
-                                </div>
-                            </div>
-                            <div class="btn-links">
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/pdf/2305.06077" target="_blank" rel="noopener"> Paper</a>
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://foivospar.github.io/Relightify/" target="_blank" rel="noopener"> Project Page</a>
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://youtu.be/N5pSN4Pc0JM?si=gFLZsdLmY_ZfzcRF" target="_blank" rel="noopener"> Video</a>
-                            </div>
-                        </div>
-                        <div class="ml-3">
-                          <img src="img/relightify.png" itemprop="image" style="max-width: 120px;" />
-                        </div>
-                      </div>
-
-                      <!-- FitMe -->
-                      <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-                          <div class="media-body">
-                              <h3 class="article-title mb-0 mt-0" itemprop="name">
-                                  <a href="https://alexlattas.com/fitme" target="_blank" itemprop="url"> FitMe: Deep Photorealistic 3D Morphable Model Avatars</a>
-                              </h3>
-                              <div class="article-style" itemprop="articleBody"><i> Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</i>, May 15, 2023</div>
-                              <div class="stream-meta article-metadata">
-                                  <div itemprop="author">
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Alexandros Lattas</span>,
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Stylianos Moschoglou</span>,
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Stylianos Ploumpis</span>,
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Baris Gecer</span>,
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Jiankang Deng</span>,
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Stefanos Zafeiriou</span>
-                                  </div>
-                              </div>
-                              <div class="btn-links">
-                                  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://openaccess.thecvf.com/content/CVPR2023/html/Lattas_FitMe_Deep_Photorealistic_3D_Morphable_Model_Avatars_CVPR_2023_paper.html" target="_blank" rel="noopener"> Paper</a>
-                                  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://alexlattas.com/fitme" target="_blank" rel="noopener"> Project Page</a>
-                                  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.youtube.com/watch?v=73ZFDkZRRCk" target="_blank" rel="noopener"> Video</a>
-                                  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/lattas/pytorch3d-me" target="_blank" rel="noopener"> Rendering Code</a>
-                              </div>
-                          </div>
-                          <div class="ml-3">
-                                  <img src="img/fitme.png" itemprop="image" style="max-width: 120px;" />
-                          </div>
-                      </div>
-
-                      <!-- Lumi -->
-                      <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-                          <div class="media-body">
-                              <h3 class="article-title mb-0 mt-0" itemprop="name">
-                                  <a href="https://wp.doc.ic.ac.uk/rgi/project/desktop-based-high-quality-facial-capture/" target="_blank" itemprop="url"> Practical and Scalable Desktop-based High Quality Facial Capture</a>
-                              </h3>
-                              <div class="article-style" itemprop="articleBody"><i> ECCV 2022: 17th European Conference in Computer Vision (ECCV) (Oral)</i>, Nov 11, 2022</div>
-                              <div class="stream-meta article-metadata">
-                                  <div itemprop="author">
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Alexandros Lattas</span>,
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Yiming Lin</span>,
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Jayanth Kannan</span>,
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Ekin Ozturk</span>,
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Luca Filipi</span>,
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Giuseppe Claudio Guarnera</span>,
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Gaurav Chawla</span>,
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Abhijeet Ghosh</span>
-                                  </div>
-                              </div>
-                              <div class="btn-links">
-                                  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136660512.pdf" target="_blank" rel="noopener">Paper</a>
-                                  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.lumirithmic.com/" target="_blank" rel="noopener">Commercial Page</a>
-                                  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.reuters.com/video/watch/idOV753309082022RP1" target="_blank" rel="noopener">Reuters</a>
-                              </div>
-                          </div>
-                          <div class="ml-3">
-                                  <img src="img/lumi.png" itemprop="image" style="max-width: 120px;" />
-                          </div>
-                      </div>
-
-                      <!-- PBIDR -->
-                      <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-                        <div class="media-body">
-                            <h3 class="article-title mb-0 mt-0" itemprop="name">
-                                <a href="https://ieeexplore.ieee.org/abstract/document/10042505" target="_blank" itemprop="url">Facial Geometric Detail Recovery via Implicit Representation</a>
-                            </h3>
-                            <div class="article-style" itemprop="articleBody"><i>IEEE 17th International Conference on Automatic Face and Gesture Recognition (FG)</i>, Jan 5, 2023</div>
-                            <div class="stream-meta article-metadata">
-                                <div itemprop="author">
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Xingyu Ren</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Alexandros Lattas</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Baris Gecer</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Jiankang Deng</span>
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Chao Ma</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Xiaokang Yang</span>
-                                </div>
-                            </div>
-                            <div class="btn-links">
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2203.09692" target="_blank" rel="noopener">Paper</a>
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/deepinsight/insightface/tree/master/reconstruction/PBIDR" target="_blank" rel="noopener">Project Page</a>
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/deepinsight/insightface/tree/master/reconstruction/PBIDR" target="_blank" rel="noopener">Code</a>
-                            </div>
-                        </div>
-                        <div class="ml-3">
-                                <img src="img/pbidr.png" itemprop="image" style="max-width: 120px;" />
-                        </div>
-                      </div>
-
-                      <!-- 3DMM-RF -->
-                      <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-                        <div class="media-body">
-                            <h3 class="article-title mb-0 mt-0" itemprop="name">
-                                <a href="https://ieeexplore.ieee.org/document/10030332" target="_blank" itemprop="url">3DMM-RF: Convolutional Radiance Fields for 3D Face Modeling</a>
-                            </h3>
-                            <div class="article-style" itemprop="articleBody"><i>IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)</i>, Jan 2, 2023</div>
-                            <div class="stream-meta article-metadata">
-                                <div itemprop="author">
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Stathis Galanakis</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Baris Gecer</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Alexandros Lattas</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Stefanos Zafeiriou</span>
-                                </div>
-                            </div>
-                            <div class="btn-links">
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://openaccess.thecvf.com/content/WACV2023/papers/Galanakis_3DMM-RF_Convolutional_Radiance_Fields_for_3D_Face_Modeling_WACV_2023_paper.pdf" target="_blank" rel="noopener">Paper</a>
-                            </div>
-                        </div>
-                        <div class="ml-3">
-                                <img src="img/3dmm-rf.png" itemprop="image" style="max-width: 120px;" />
-                        </div>
-                      </div>
-
-                      <!-- Perspective Recon -->
-                      <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-                        <div class="media-body">
-                            <h3 class="article-title mb-0 mt-0" itemprop="name">
-                                <a href="https://github.com/deepinsight/insightface/tree/master/reconstruction/jmlr" target="_blank" itemprop="url">Perspective Reconstruction of Human Faces by Joint Mesh and Landmark Regression</a>
-                            </h3>
-                            <div class="article-style" itemprop="articleBody"><i> ECCV Workshops 2022: Perspective Projection Based Monocular 3D Face Reconstruction Challenge</i>, Nov 11, 2022</div>
-                            <div class="stream-meta article-metadata">
-                                <div itemprop="author">
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Jia Guo</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Jinke Yu</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Alexandros Lattas</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Jiankang Deng</span>
-                                </div>
-                            </div>
-                            <div class="btn-links">
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2208.07142" target="_blank" rel="noopener">Paper</a>
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/deepinsight/insightface/tree/master/reconstruction/jmlr" target="_blank" rel="noopener">Code</a>
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://tianchi.aliyun.com/competition/entrance/531961/rankingList" target="_blank" rel="noopener">1st Place in Challenge</a>
-                            </div>
-                        </div>
-                        <div class="ml-3">
-                                <img src="img/jmlr.png" itemprop="image" style="max-width: 120px;" />
-                        </div>
-                      </div>
-
-                      <!-- PR-HFR -->
-                      <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-                        <div class="media-body">
-                            <h3 class="article-title mb-0 mt-0" itemprop="name">
-                                <a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/8f182e220092f7f1fc44f3313023f5a0-Abstract-Conference.html" target="_blank" itemprop="url">Physically-Based Face Rendering for NIR-VIS Face Recognition</a>
-                            </h3>
-                            <div class="article-style" itemprop="articleBody"><i> Advances in Neural Information Processing Systems 35 (NeurIPS)</i>, Nov 28, 2022</div>
-                            <div class="stream-meta article-metadata">
-                                <div itemprop="author">
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Yunqi Miao*</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Alexandros Lattas*</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Jiankang Deng</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Junhong Han</span>
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Stefanos Zafeiriou</span>
-                                </div>
-                            </div>
-                            <div class="btn-links">
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/8f182e220092f7f1fc44f3313023f5a0-Abstract-Conference.html" target="_blank" rel="noopener">Paper</a>
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/lattas/PR-HFR" target="_blank" rel="noopener">Code</a>
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/lattas/PR-HFR/blob/main/pics/Poster.png" target="_blank" rel="noopener">Poster</a>
-                            </div>
-                        </div>
-                        <div class="ml-3">
-                                <img src="img/pr-hfr.png" itemprop="image" style="max-width: 120px;" />
-                        </div>
-                      </div>
-
-                      <!-- Mask -->
-                      <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-                        <div class="media-body">
-                            <h3 class="article-title mb-0 mt-0" itemprop="name">
-                                <a href="https://www.emerald.com/insight/content/doi/10.1108/RPJ-10-2020-0231/full/html" target="_blank" itemprop="url">A Scalable Mass Customisation Design Process for 3D-Printed Respirator Mask to Combat COVID-19</a>
-                            </h3>
-                            <div class="article-style" itemprop="articleBody"><i> Rapid Prototyping Journal</i>, Aug 3, 2021</div>
-                            <div class="stream-meta article-metadata">
-                                <div itemprop="author">
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Shiya Li</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Usman Waheed</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Mohanad Bahshwan</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Louis Wang</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Livia Kalossaka</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Jiwoo Choi</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Franciska Kundrak</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Alexandros Lattas</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Stylianos Ploumpis</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Stefanos Zafeiriou</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Connor William Myant</span>
-                                </div>
-                            </div>
-                            <div class="btn-links">
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://spiral.imperial.ac.uk/bitstream/10044/1/90841/2/PDF_Proof.pdf" target="_blank" rel="noopener">Paper</a>
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.bbc.co.uk/news/av/technology-53432848" target="_blank" rel="noopener">BBC</a>
-                             </div>
-                        </div>
-                        <div class="ml-3">
-                                <img src="img/mensura.png" itemprop="image" style="max-width: 120px;" />
-                        </div>
-                      </div>
-
-                      <!-- SCRFD -->
-                      <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-                        <div class="media-body">
-                            <h3 class="article-title mb-0 mt-0" itemprop="name">
-                                <a href="https://github.com/deepinsight/insightface/tree/master/detection/scrfd" target="_blank" itemprop="url">Sample and Computation Redistribution for Efficient Face Detection</a>
-                            </h3>
-                            <div class="article-style" itemprop="articleBody"><i> International Conference on Learning Representations (ICLR)</i>, May 10, 2021</div>
-                            <div class="stream-meta article-metadata">
-                                <div itemprop="author">
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Jia Guo</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Jiankang Deng</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Alexandros Lattas</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Stefanos Zafeiriou</span>
-                                </div>
-                            </div>
-                            <div class="btn-links">
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/pdf/2105.04714" target="_blank" rel="noopener">Paper</a>
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/deepinsight/insightface/tree/master/detection/scrfd" target="_blank" rel="noopener">Project Page</a>
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/deepinsight/insightface/tree/master/detection/scrfd" target="_blank" rel="noopener">Code</a>
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://huggingface.co/spaces/hysts/insightface-SCRFD" target="_blank" rel="noopener">Gradio Demo</a>                              </div>
-                        </div>
-                        <div class="ml-3">
-                                <img src="img/scrfd.png" itemprop="image" style="max-width: 120px;" />
-                        </div>
-                      </div>
-
-                      <!-- VPL -->
-                      <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-                        <div class="media-body">
-                            <h3 class="article-title mb-0 mt-0" itemprop="name">
-                                <a href="https://github.com/deepinsight/insightface/tree/master/detection/scrfd" target="_blank" itemprop="url">Variational Prototype Learning for Deep Face Recognition</a>
-                            </h3>
-                            <div class="article-style" itemprop="articleBody"><i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition</i>, June 20, 2021</div>
-                            <div class="stream-meta article-metadata">
-                                <div itemprop="author">
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Jiankang Deng</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Jia Guo</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Jing Yang</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Alexandros Lattas</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Stefanos Zafeiriou</span>
-                                </div>
-                            </div>
-                            <div class="btn-links">
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://openaccess.thecvf.com/content/CVPR2021/papers/Deng_Variational_Prototype_Learning_for_Deep_Face_Recognition_CVPR_2021_paper.pdf" target="_blank" rel="noopener">Paper</a>
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://insightface.ai/vpl" target="_blank" rel="noopener">Project Page</a>
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/deepinsight/insightface/tree/master/recognition/vpl" target="_blank" rel="noopener">Code</a>
-                            </div>
-                        </div>
-                        <div class="ml-3">
-                                <img src="img/vpl.png" itemprop="image" style="max-width: 120px;" />
-                        </div>
-                      </div>
-
-                      <!-- AvatarMe++ -->
-                      <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-                          <div class="media-body">
-                              <h3 class="article-title mb-0 mt-0" itemprop="name">
-                                  <a href="https://github.com/lattas/AvatarMe" target="_blank" itemprop="url"> AvatarMe++: Facial Shape and BRDF Inference with Photorealistic Rendering-Aware GANs</a>
-                              </h3>
-                              <div class="article-style" itemprop="articleBody"><i> IEEE Transactions on Pattern Analysis and Machine Intelligence 44.12 (2021)</i>, Nov 8, 2021</div>
-                              <div class="stream-meta article-metadata">
-                                  <div itemprop="author">
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Alexandros Lattas</span>,
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Stylianos Moschoglou</span>,
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Baris Gecer</span>,
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Stylianos Ploumpis</span>,
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Vasileios Triantafylloy</span>,
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Abhijeet Ghosh</span>,
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Stefanos Zafeiriou</span>
-                                  </div>
-                              </div>
-                              <div class="btn-links">
-                                  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/pdf/2112.05957" target="_blank" rel="noopener">Paper</a>
-                                  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/lattas/AvatarMe" target="_blank" rel="noopener">Project Page</a>
-                                  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/lattas/AvatarMe#public-dataset" target="_blank" rel="noopener">Data</a>
-                                  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/lattas/pytorch3d-Me" target="_blank" rel="noopener">Rendering Code</a>
-                                </div>
-                          </div>
-                          <div class="ml-3">
-                                  <img src="img/avatarmeplus.png" itemprop="image" style="max-width: 120px;" />
-                          </div>
-                      </div>
-
-                      <!-- AvatarMe -->
-                      <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-                          <div class="media-body">
-                              <h3 class="article-title mb-0 mt-0" itemprop="name">
-                                  <a href="https://github.com/lattas/AvatarMe" target="_blank" itemprop="url">AvatarMe: Realistically Renderable 3D Facial Reconstruction &#34;in-the-wild&#34;</a>
-                              </h3>
-
-                              <div class="article-style" itemprop="articleBody"><i> Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</i>, May 1, 2020</div>
-
-                              <div class="stream-meta article-metadata">
-                                  <div itemprop="author">
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Alexandros Lattas</span>,
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Stylianos Moschoglou</span>,
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Baris Gecer</span>,
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Stylianos Ploumpis</span>,
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Vasileios Triantafylloy</span>,
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Abhijeet Ghosh</span>,
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Stefanos Zafeiriou</span>
-                                  </div>
-                              </div>
-
-                              <div class="btn-links">
-                                  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/pdf/2003.13845.pdf" target="_blank" rel="noopener">
-                                      Paper
-                                  </a>
-
-                                  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/lattas/AvatarMe" target="_blank" rel="noopener">
-                                      Project Page
-                                  </a>
-
-                                  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.youtube.com/watch?v=fEsgeZPN8Uw" target="_blank" rel="noopener">
-                                      Video
-                                  </a>
-                                  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/lattas/AvatarMe#public-dataset" target="_blank" rel="noopener">
-                                      Data
-                                  </a>
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://venturebeat.com/ai/ai-model-creates-3d-avatars-from-a-persons-picture/" target="_blank" rel="noopener">
-                                      VentureBeat
-                                </a>
-                              </div>
-                          </div>
-                          <div class="ml-3">
-                                  <img src="/publication/avatarme/featured_huf78514df726a559e3efa3207a5f1b2dc_1318741_400x0_resize_lanczos_2.png" itemprop="image" style="max-width: 120px;" />
-                          </div>
-                      </div>
-
-                      <!-- TBGAN -->
-                      <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-                        <div class="media-body">
-                            <h3 class="article-title mb-0 mt-0" itemprop="name">
-                                <a href="https://github.com/barisgecer/TBGAN" target="_blank" itemprop="url">Synthesizing Coupled 3D Face Modalities by Trunk-Branch Generative Adversarial Networks</a>
-                            </h3>
-
-                            <div class="article-style" itemprop="articleBody"><i>European Conference on Computer Vision 2020 (ECCV)</i>, May 1, 2020</div>
-
-                            <div class="stream-meta article-metadata">
-                                <div itemprop="author">
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Baris Gecer</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Alexandros Lattas</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Stylianos Ploumpis</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Jiankang Deng</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Athanasios Papaioannou</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Stylianos Moschoglou</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Stefanos Zafeiriou</span>
-                                </div>
-                            </div>
-
-                            <div class="btn-links">
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/pdf/1909.02215" target="_blank" rel="noopener">
-                                    Paper
-                                </a>
-
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/barisgecer/TBGAN" target="_blank" rel="noopener">
-                                    Project Page
-                                </a>
-
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.youtube.com/watch?v=wehBCetIb7E&ab_channel=Bar%C4%B1%C5%9FGe%C3%A7er" target="_blank" rel="noopener">
-                                    Video
-                                </a>
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/barisgecer/TBGAN" target="_blank" rel="noopener">
-                                    Code
-                                </a>
-                            </div>
-                        </div>
-                        <div class="ml-3">
-                                <img src="img/tbgan.png" itemprop="image" style="max-width: 120px;" />
-                        </div>
-                      </div>
-
-                      <!-- Spectral -->
-                      <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-                        <div class="media-body">
-                            <h3 class="article-title mb-0 mt-0" itemprop="name">
-                                <a href="https://eprints.whiterose.ac.uk/163976/1/v39i4pp075_089.pdf" target="_blank" itemprop="url">Practical Measurement and Reconstruction of Spectral Skin Reflectance</a>
-                            </h3>
-                            <div class="article-style" itemprop="articleBody"><i>Computer Graphics Forum</i>, July 3, 2020</div>
-                            <div class="stream-meta article-metadata">
-                                <div itemprop="author">
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Yuliya Gitlina</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Giuseppe Claudio Guarnera</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Daljit Singh Dhillon</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Jan Hansen</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Alexandros Lattas</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Dinesh Pai</span>,
-                                    <span itemprop="author name" itemtype="http://schema.org/Person">Abhijeet Ghosh</span>
-                                </div>
-                            </div>
-                            <div class="btn-links">
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://eprints.whiterose.ac.uk/163976/1/v39i4pp075_089.pdf" target="_blank" rel="noopener">Paper</a>
-                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://wp.doc.ic.ac.uk/rgi/project/practical-measurement-and-reconstruction-of-spectral-skin-reflectance/" target="_blank" rel="noopener">Project Page</a>
-                            </div>
-                        </div>
-                        <div class="ml-3">
-                                <img src="img/spectral.png" itemprop="image" style="max-width: 120px;" />
-                        </div>
-                      </div>
-
-                      <!-- Multi-View Facial Capture -->
-                      <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-                          <div class="media-body">
-                              <h3 class="article-title mb-0 mt-0" itemprop="name">
-                                  <a href="https://dl.acm.org/doi/10.1145/3306214.3338611" target="_blank" itemprop="url"> Multi-View Facial Capture Using Binary Spherical Gradient Illumination</a>
-                              </h3>
-
-                              <div class="article-style" itemprop="articleBody"><i> SIGGRAPH &lsquo;19 Special Interest Group on Computer Graphics and Interactive Techniques Conference</i>, Jun 28, 2019</div>
-
-                              <div class="stream-meta article-metadata">
-                                  <div itemprop="author">
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Alexandros Lattas</span>,
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Mingqian Wang</span>,
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Stefanos Zafeiriou</span>,
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Abhijeet Ghosh</span>
-                                  </div>
-                              </div>
-
-                              <div class="btn-links">
-                                  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://alexlattas.com/files/pub/multi-view-facial-capture-binary.pdf" target="_blank" rel="noopener">
-                                      Paper
-                                  </a>
-
-                                  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.youtube.com/watch?v=qz_g3RYWtMA&amp;feature=youtu.be" target="_blank" rel="noopener">
-                                      Video
-                                  </a>
-
-                                  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://alexlattas.com/files/pub/multi-view-facial-poster.jpg" target="_blank" rel="noopener">
-                                      Poster
-                                  </a>
-                              </div>
-                          </div>
-                          <div class="ml-3">
-                                  <img src="/publication/multi-view-facial/featured_hu8805c9cea4641bd15ff2fc9fcffc583e_191204_400x0_resize_q100_lanczos.jpg" itemprop="image" style="max-width: 120px;" />
-                          </div>
-                      </div>
-
-                      <!-- echoes from space -->
-                      <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-                          <div class="media-body">
-                              <h3 class="article-title mb-0 mt-0" itemprop="name">
-                                  <a href="https://dl.acm.org/citation.cfm?id=3183545" target="_blank" itemprop="url">Echoes From Space: Grouping Commands with Large-Scale Telemetry Data</a>
-                              </h3>
-
-                              <div class="article-style" itemprop="articleBody"><i> ICSE-SEIP &lsquo;18: Proceedings of the 40th International Conference on Software Engineering</i>, Jun 3, 2018</div>
-
-                              <div class="stream-meta article-metadata">
-                                  <div itemprop="author">
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Alexandros Lattas</span>,
-                                      <span itemprop="author name" itemtype="http://schema.org/Person">Diomidis Spinellis</span>
-                                  </div>
-                              </div>
-
-                              <div class="btn-links">
-                                  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.spinellis.gr/pubs/conf/2018-ICSE-SEIP-cmd-optimize/html/cmd-optimize.pdf" target="_blank" rel="noopener">
-                                    Paper
-                                  </a>
-                                  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/lattas/echoes-from-space" target="_blank" rel="noopener">
-                                    Code
-                                  </a>
-                                  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/lattas/echoes-from-space/blob/master/doc/poster.jpg" target="_blank" rel="noopener">
-                                    Poster
-                                  </a>
-                              </div>
-                          </div>
-                          <div class="ml-3">
-                                  <img src="/publication/echoes-from-space/featured_hu34ecaa98b2adab5bb3618c6970ad6be5_113382_400x0_resize_lanczos_2.png" itemprop="image" style="max-width: 120px;" />
-                          </div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
-
-        <script>
-            hljs.initHighlightingOnLoad();
-        </script>
-
-        <script>
-            const search_index_filename = "/index.json";
-            const i18n = {
-                placeholder: "Search...",
-                results: "results found",
-                no_results: "No results found",
-            };
-            const content_type = {
-                post: "Posts",
-                project: "Projects",
-                publication: "Publications",
-                talk: "Talks",
-            };
-        </script>
-
-        <script id="search-hit-fuse-template" type="text/x-template">
-            <div class="search-hit" id="summary-{{key}}">
-            <div class="search-hit-content">
-              <div class="search-hit-name">
-                <a href="{{relpermalink}}">{{title}}</a>
-                <div class="article-metadata search-hit-type">{{type}}</div>
-                <p class="search-hit-description">{{snippet}}</p>
-              </div>
-            </div>
-            </div>
-        </script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-
-        <script src="/js/academic.min.3394a224b26ce58ff36f44c54743e0ab.js"></script>
-
-        <div class="container">
-            <footer class="site-footer">
-                <p class="powered-by">
-                    © Alexandros Lattas 2023 &middot; Powered by the
-                    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
-
-                    <span class="float-right" aria-hidden="true">
-                        <a href="#" id="back_to_top">
-                            <span class="button_icon">
-                                <i class="fas fa-chevron-up fa-2x"></i>
-                            </span>
-                        </a>
-                    </span>
-                </p>
-            </footer>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alexandros Lattas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="images/profile.jpg" alt="Profile Picture" />
+      <h1>Alexandros Lattas</h1>
+      <p>Research Scientist @ <span>
+        <a href="https://arvr.google.com/" style="text-decoration:none">
+            <span style="color: #4285F4">G</span><span style="color: #DB4437">o</span><span style="color: #F4B400">o</span><span style="color: #4285F4">g</span><span style="color: #0F9D58">l</span><span style="color: #DB4437">e</span>
+      <p>
+        <a href="https://scholar.google.com/citations?user=0wJRUlsAAAAJ&hl=en">Google Scholar</a>&ensp;|&ensp;
+        <a href="https://www.linkedin.com/in/lattas/">LinkedIn</a>&ensp;|&ensp;
+        <a href="https://x.com/alexlattas">Twitter</a></a>&ensp;|&ensp;
+        <a href="https://github.com/lattas">Github</a>
+      </p>
+    </header>
+    
+
+    <section class="section bio">
+      <p>I am a researcher with interests in Generative AI and Digital Humans.
+         Currently working as a Research Scientist at <a href="https://arvr.google.com/">Google</a>.
+         Previously, I was a Research Scientist at Huawei's <a href="https://www.noahlab.com.hk/">Noah's Ark Lab</a>,
+         and at our Imperial College lab spin-off startup <a href="https://www.crunchbase.com/organization/facesoft">Facesoft</a>.
+      </p>
+      <p>
+        I obtained my PhD at Imperial College London,
+        with <a href="https://profiles.imperial.ac.uk/s.zafeiriou">Stefanos Zafeiriou</a> and <a href="https://www.doc.ic.ac.uk/~ghosh/">Abhijeet Ghosh</a> as my advisors.
+        Two of my PhD projects were commercialized in spin-off startups,
+        <a href="https://github.com/lattas/AvatarMe">Generative Adversarial Networks for facial reconstruction</a> with <a href="https://venturebeat.com/ai/ai-model-creates-3d-avatars-from-a-persons-picture/">Facesoft</a>,
+        and <a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136660512.pdf">practical facial capturing systems</a> with <a href="https://www.reuters.com/video/watch/idOV753309082022RP1/">Lumirithmic</a>.
+      </p>
+    </section>
+
+    <section class="section papers">
+      <h2>Selected Publications</h2>
+
+      <!-- Tega 2025 -->
+      <div class="paper">
+        <div class="paper-image-container">
+          <img src="images/publications/tega.png" alt="Paper Thumbnail" class="default" />
+          <img src="images/publications/tega_hover.gif" alt="Paper Thumbnail " class="hover" />
         </div>
-
-        <div id="modal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Cite</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <pre><code class="tex hljs"></code></pre>
-                    </div>
-                    <div class="modal-footer">
-                        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank"> <i class="fas fa-copy"></i> Copy </a>
-                        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank"> <i class="fas fa-download"></i> Download </a>
-                        <div id="modal-error"></div>
-                    </div>
-                </div>
-            </div>
+        <div class="paper-details">
+            <strong><a href="https://arxiv.org/abs/2505.05672" style="text-decoration:none" target="_blank">
+            TeGA: Texture Space Gaussian Avatars for High-Resolution Dynamic Head Modeling</a></strong><br/>
+            <span>Gengyan Li, Paulo Gotardo, Timo Bolkart, Stephan Garbin, Kripasindhu Sarkar, Abhimitra Meka, Alexandros Lattas, Thabo Beeler</span><br/>
+            <em>SIGGRAPH 2025</em><br/>
+            <a href="https://arxiv.org/abs/2505.05672" target="_blank">Paper</a> /
+            <a href="https://syntec-research.github.io/UVGA/" target="_blank">Project Page</a>
         </div>
-    </body>
+      </div>
+
+      <!-- Synshot 2025 -->
+      <div class="paper">
+        <div class="paper-image-container">
+          <img src="images/publications/synshot.png" alt="Paper Thumbnail" class="default" />
+          <img src="images/publications/synshot_hover.gif" alt="Paper Thumbnail " class="hover" />
+        </div>
+        <div class="paper-details">
+            <strong><a href="https://arxiv.org/abs/2501.06903" style="text-decoration:none" target="_blank">
+            Synthetic Prior for Few-Shot Drivable Head Avatar Inversion</a></strong><br/>
+            <span>Wojciech Zielonka, Stephan Garbin, Alexandros Lattas, George Kopanas, Paulo Gotardo, Thabo Beeler, Justus Thies, Timo Bolkart</span><br/>
+            <em>CVPR 2025</em><br/>
+            <a href="https://arxiv.org/abs/2501.06903" target="_blank">Paper</a> /
+            <a href="https://zielon.github.io/synshot/" target="_blank">Project Page</a> /
+            <a href="https://youtu.be/4KQQatkaSgc" target="_blank">Video</a>        
+        </div>
+      </div>
+
+      <!-- SpinMeRound 2025 -->
+      <div class="paper">
+        <div class="paper-image-container">
+          <img src="images/publications/spinmeround.png" alt="Paper Thumbnail" class="default" />
+          <img src="images/publications/spinmeround_hover.gif" alt="Paper Thumbnail " class="hover" />
+        </div>
+        <div class="paper-details">
+            <strong><a href="https://arxiv.org/abs/2504.10716" style="text-decoration:none" target="_blank">
+            SpinMeRound: Consistent Multi-View Identity Generation Using Diffusion Models</a></strong><br/>
+            <span>Stathis Galanakis, Alexandros Lattas, Stylianos Moschoglou, Bernhard Kainz, Stefanos Zafeiriou</span><br/>
+            <em>ICCV 2025</em><br/>
+            <a href="https://arxiv.org/abs/2504.10716" target="_blank">Paper</a>
+        </div>
+      </div>
+
+      <!-- Arc2Avatar 2025 -->
+      <div class="paper">
+        <div class="paper-image-container">
+          <img src="images/publications/arc2avatar.png" alt="Paper Thumbnail" class="default" />
+          <img src="images/publications/arc2avatar_hover.gif" alt="Paper Thumbnail " class="hover" />
+        </div>
+        <div class="paper-details">
+            <strong><a href="https://arxiv.org/abs/2501.05379" style="text-decoration:none" target="_blank">
+            Arc2Avatar: Generating Expressive 3D Avatars from a Single Image via ID Guidance</a></strong><br/>
+            <span>Dimitrios Gerogiannis, Foivos Paraperas Papantoniou, Rolandos Alexandros Potamias, Alexandros Lattas, Stefanos Zafeiriou</span><br/>
+            <em>CVPR 2025</em><br/>
+            <a href="https://arxiv.org/abs/2501.05379" target="_blank">Paper</a> /
+            <a href="https://arc2avatar.github.io/" target="_blank">Project Page</a> /
+            <a href="https://github.com/dimgerogiannis/Arc2Avatar" target="_blank">Code</a>        
+        </div>
+      </div>
+
+      <!-- Arc2Face 2024 -->
+      <div class="paper">
+        <div class="paper-image-container">
+          <img src="images/publications/arc2face.png" alt="Paper Thumbnail" class="default" />
+          <img src="images/publications/arc2face.png" alt="Paper Thumbnail " class="hover" />
+        </div>
+        <div class="paper-details">
+            <strong><a href="https://arxiv.org/abs/2403.11641" style="text-decoration:none" target="_blank">
+            Arc2Face: A Foundation Model for ID-Consistent Human Faces</a></strong><br/>
+            <span>Foivos Paraperas Papantoniou, Alexandros Lattas, Stylianos Moschoglou, Jiankang Deng, Bernhard Kainz, Stefanos Zafeiriou</span><br/>
+            <em>ECCV 2024 (Oral)</em><br/>
+            <a href="https://arxiv.org/abs/2403.11641" target="_blank">Paper</a> /
+            <a href="https://github.com/foivospar/Arc2Face" target="_blank">Code</a> /
+            <a href="https://arc2face.github.io/" target="_blank">Project Page</a> /
+            <a href="https://huggingface.co/datasets/FoivosPar/Arc2Face" target="_blank">Dataset</a> /
+            <a href="https://replicate.com/camenduru/arc2face" target="_blank">Demo</a> /
+            <a href="https://github.com/caleboleary/ComfyUI-Arc2Face" target="_blank">ComfyUI</a>            
+        </div>
+      </div>
+
+      <!-- AnimateMe -->
+      <div class="paper">
+        <div class="paper-image-container">
+          <img src="images/publications/animateme.png" alt="Paper Thumbnail" class="default" />
+          <img src="images/publications/animateme.png" alt="Paper Thumbnail " class="hover" />
+        </div>
+        <div class="paper-details">
+            <strong><a href="https://arxiv.org/abs/2403.17213" style="text-decoration:none" target="_blank">
+            Animateme: 4D Facial Expressions via Diffusion Models</a></strong><br/>
+            <span>Dimitrios Gerogiannis, Foivos Papantoniou, Rolandos Potamias, Alexandros Lattas, Stylianos Moschoglou, Stylianos Ploumpis, Stefanos Zafeiriou</span><br/>
+            <em>ECCV 2024</em><br/>
+            <a href="https://arxiv.org/abs/2403.17213" target="_blank">Paper</a>
+        </div>
+      </div>
+
+      <!-- Id23D -->
+      <div class="paper">
+        <div class="paper-image-container">
+          <img src="images/publications/id23d.png" alt="Paper Thumbnail" class="default" />
+          <img src="images/publications/id34d_hover.gif" alt="Paper Thumbnail " class="hover" />
+        </div>
+        <div class="paper-details">
+            <strong><a href="https://arxiv.org/pdf/2405.16570" style="text-decoration:none" target="_blank">
+            ID-to-3D: Expressive ID-guided 3D Heads via Score Distillation Sampling</a></strong><br/>
+            <span>Francesca Babiloni, Alexandros Lattas, Jiankang Deng, Stefanos Zafeiriou</span><br/>
+            <em>NeurIPS 2024</em><br/>
+            <a href="https://arxiv.org/pdf/2405.16570" target="_blank">Paper</a> /
+            <a href="https://idto3d.github.io/" target="_blank">Project Page</a>
+        </div>
+      </div>
+
+      <!-- FitDiff -->
+      <div class="paper">
+        <div class="paper-image-container">
+          <img src="images/publications/fitdiff.png" alt="Paper Thumbnail" class="default" />
+          <img src="images/publications/fitdiff_hover.gif" alt="Paper Thumbnail " class="hover" />
+        </div>
+        <div class="paper-details">
+            <strong><a href="https://arxiv.org/abs/2312.04465" style="text-decoration:none" target="_blank">
+            FitDiff: Robust monocular 3D facial shape and reflectance estimation using Diffusion Models</a></strong><br/>
+            <span>Stathis Galanakis, Alexandros Lattas, Stylianos Moschoglou, Stefanos Zafeiriou</span><br/>
+            <em>WACV 2024</em><br/>
+            <a href="https://arxiv.org/abs/2312.04465" target="_blank">Paper</a> /
+            <a href="https://stathisgln.github.io/fitdiff/" target="_blank">Project Page</a>
+        </div>
+      </div>
+
+      <!-- Relightify -->
+      <div class="paper">
+        <div class="paper-image-container">
+          <img src="images/publications/relightify.png" alt="Paper Thumbnail" class="default" />
+          <img src="images/publications/relightify_hover.gif" alt="Paper Thumbnail " class="hover" />
+        </div>
+        <div class="paper-details">
+            <strong><a href="https://arxiv.org/pdf/2305.06077" style="text-decoration:none" target="_blank">
+            Relightify: Relightable 3D Faces from a Single Image via Diffusion Models</a></strong><br/>
+            <span>Foivos Papantoniou, Alexandros Lattas, Stylianos Moschoglou, Stefanos Zafeiriou</span><br/>
+            <em>ICCV 2023</em><br/>
+            <a href="https://arxiv.org/pdf/2305.06077" target="_blank">Paper</a> /
+            <a href="https://foivospar.github.io/Relightify/" target="_blank">Project Page</a> /
+            <a href="https://www.youtube.com/watch?v=N5pSN4Pc0JM&ab_channel=FoivosParaperas" target="_blank">Video</a>
+        </div>
+      </div>
+
+      <!-- FitMe -->
+      <div class="paper">
+        <div class="paper-image-container">
+          <img src="images/publications/fitme.png" alt="Paper Thumbnail" class="default" />
+          <img src="images/publications/fitme_hover.gif" alt="Paper Thumbnail " class="hover" />
+        </div>
+        <div class="paper-details">
+            <strong><a href="https://openaccess.thecvf.com/content/CVPR2023/html/Lattas_FitMe_Deep_Photorealistic_3D_Morphable_Model_Avatars_CVPR_2023_paper.html" style="text-decoration:none" target="_blank">
+            FitMe: Deep Photorealistic 3D Morphable Model Avatars</a></strong><br/>
+            <span>Alexandros Lattas, Stylianos Moschoglou, Stylianos Ploumpis, Baris Gecer, Jiankang Deng, Stefanos Zafeiriou</span><br/>
+            <em>CVPR 2023</em><br/>
+            <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Lattas_FitMe_Deep_Photorealistic_3D_Morphable_Model_Avatars_CVPR_2023_paper.html" target="_blank">Paper</a> /
+            <a href="https://alexlattas.com/fitme" target="_blank">Project Page</a> /
+            <a href="https://github.com/lattas/pytorch3d-me" target="_blank">Code</a> /
+            <a href="https://www.youtube.com/watch?v=73ZFDkZRRCk&ab_channel=AlexandrosLattas" target="_blank">Video</a>
+        </div>
+      </div>
+
+      <!-- Lumirithmic -->
+      <div class="paper">
+        <div class="paper-image-container">
+          <img src="images/publications/lumirithmic.png" alt="Paper Thumbnail" class="default" />
+          <img src="images/publications/lumirithmic_hover.gif" alt="Paper Thumbnail " class="hover" />
+        </div>
+        <div class="paper-details">
+            <strong><a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136660512.pdf" style="text-decoration:none" target="_blank">
+            Practical and Scalable Desktop-based High Quality Facial Capture</a></strong><br/>
+            <span>Alexandros Lattas, Yiming Lin, Jayanth Kannan, Ekin Ozturk, Luca Filipi, Giuseppe Claudio Guarnera, Gaurav Chawla, Abhijeet Ghosh</span><br/>
+            <em>ECCV 2022 (Oral)</em><br/>
+            <a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136660512.pdf" target="_blank">Paper</a> /
+            <a href="https://www.lumirithmic.com/products-technology/" target="_blank">Commercial Page</a> /
+            <b>Press:</b> <a href="https://www.reuters.com/video/watch/idOV753309082022RP1" target="_blank">Reuters</a>
+        </div>
+      </div>
+
+      <!-- NIR-VIS -->
+      <div class="paper">
+        <div class="paper-image-container">
+          <img src="images/publications/nirvis.png" alt="Paper Thumbnail" class="default" />
+          <img src="images/publications/nirvis_hover.png" alt="Paper Thumbnail " class="hover" />
+        </div>
+        <div class="paper-details">
+            <strong><a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/8f182e220092f7f1fc44f3313023f5a0-Abstract-Conference.html" style="text-decoration:none" target="_blank">
+            Physically-Based Face Rendering for NIR-VIS Face Recognition</a></strong><br/>
+            <span>Yunqi Miao*, Alexandros Lattas*, Jiankang Deng, Junhong Han, Stefanos Zafeiriou</span><br/>
+            <em>NeurIPS 2022</em><br/>
+            <a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/8f182e220092f7f1fc44f3313023f5a0-Abstract-Conference.html" target="_blank">Paper</a> /
+            <a href="https://github.com/yoqim/PR-HFR" target="_blank">Code</a>
+        </div>
+      </div>
+
+      <!-- WCPA -->
+      <div class="paper">
+        <div class="paper-image-container">
+          <img src="images/publications/wcpa.png" alt="Paper Thumbnail" class="default" />
+          <img src="images/publications/wcpa_hover.png" alt="Paper Thumbnail " class="hover" />
+        </div>
+        <div class="paper-details">
+            <strong><a href="https://arxiv.org/abs/2208.07142" style="text-decoration:none" target="_blank">
+            Perspective Reconstruction of Human Faces by Joint Mesh and Landmark Regression</a></strong><br/>
+            <span>Jia Guo, Jinke Yu, Alexandros Lattas, Jiankang Deng</span><br/>
+            <em>ECCV Workshops 2022</em><br/>
+            <a href="https://arxiv.org/abs/2208.07142" target="_blank">Paper</a> /
+            <a href="https://github.com/deepinsight/insightface/tree/master/reconstruction/jmlr" target="_blank">Code</a> /
+            <a href="https://tianchi.aliyun.com/competition/entrance/531961/rankingList" target="_blank">1st Place WCPA Challenge</a>
+        </div>
+      </div>
+
+      <!-- Mensura -->
+      <div class="paper">
+        <div class="paper-image-container">
+          <img src="images/publications/mensura.png" alt="Paper Thumbnail" class="default" />
+          <img src="images/publications/mensura_hover.gif" alt="Paper Thumbnail " class="hover" />
+        </div>
+        <div class="paper-details">
+            <strong><a href="https://www.emerald.com/insight/content/doi/10.1108/rpj-10-2020-0231/full/html" style="text-decoration:none" target="_blank">
+            A Scalable Mass Customisation Design Process for 3D-Printed Respirator Mask to Combat COVID-19</a></strong><br/>
+            <span>Shiya Li, Usman Waheed, Mohanad Bahshwan, Louis Wang, Livia Kalossaka, Jiwoo Choi, Franciska Kundrak, Alexandros Lattas, Stylianos Ploumpis, Stefanos Zafeiriou, Connor William Myant</span><br/>
+            <em>Rapid Prototyping Journal, 2021</em><br/>
+            <a href="https://www.emerald.com/insight/content/doi/10.1108/rpj-10-2020-0231/full/html" target="_blank">Paper</a> /
+            <b>Press:</b> <a href="https://www.bbc.co.uk/news/av/technology-53432848" target="_blank">BBC</a>
+        </div>
+      </div>
+
+
+      <!-- VPL -->
+      <div class="paper">
+        <div class="paper-image-container">
+          <img src="images/publications/vpl.png" alt="Paper Thumbnail" class="default" />
+          <img src="images/publications/vpl_hover.png" alt="Paper Thumbnail " class="hover" />
+        </div>
+        <div class="paper-details">
+            <strong><a href="http://openaccess.thecvf.com/content/CVPR2021/papers/Deng_Variational_Prototype_Learning_for_Deep_Face_Recognition_CVPR_2021_paper.pdf" style="text-decoration:none" target="_blank">
+            Variational Prototype Learning for Deep Face Recognition</a></strong><br/>
+            <span>Jiankang Deng, Jia Guo, Jing Yang, Alexandros Lattas, Stefanos Zafeiriou</span><br/>
+            <em>CVPR, 2021</em><br/>
+            <a href="http://openaccess.thecvf.com/content/CVPR2021/papers/Deng_Variational_Prototype_Learning_for_Deep_Face_Recognition_CVPR_2021_paper.pdf" target="_blank">Paper</a> /
+            <a href="https://insightface.ai/vpl" target="_blank">Project Page</a> /
+            <a href="https://github.com/deepinsight/insightface/tree/master/recognition/vpl" target="_blank">Code</a>
+        </div>
+      </div>
+
+      <!-- SCRFD -->
+      <div class="paper">
+        <div class="paper-image-container">
+          <img src="images/publications/scrfd.png" alt="Paper Thumbnail" class="default" />
+          <img src="images/publications/scrfd.png" alt="Paper Thumbnail " class="hover" />
+        </div>
+        <div class="paper-details">
+            <strong><a href="https://arxiv.org/pdf/2105.04714" style="text-decoration:none" target="_blank">
+            Sample and Computation Redistribution for Efficient Face Detection</a></strong><br/>
+            <span>Jia Guo, Jiankang Deng, Alexandros Lattas, Stefanos Zafeiriou</span><br/>
+            <em>ICLR, 2021</em><br/>
+            <a href="https://arxiv.org/pdf/2105.04714" target="_blank">Paper</a> /
+            <a href="https://github.com/deepinsight/insightface/tree/master/detection/scrfd" target="_blank">Project Page</a> /
+            <a href="https://github.com/deepinsight/insightface/tree/master/detection/scrfd" target="_blank">Code</a>
+        </div>
+      </div>
+
+      <!-- AvatarMe++ -->
+      <div class="paper">
+        <div class="paper-image-container">
+          <img src="images/publications/avatarme++.png" alt="Paper Thumbnail" class="default" />
+          <img src="images/publications/avatarme++.png" alt="Paper Thumbnail " class="hover" />
+        </div>
+        <div class="paper-details">
+            <strong><a href="https://arxiv.org/pdf/2112.05957" style="text-decoration:none" target="_blank">
+            AvatarMe++: Facial Shape and BRDF Inference with Photorealistic Rendering-Aware GANs</a></strong><br/>
+            <span>Alexandros Lattas, Stylianos Moschoglou, Stylianos Ploumpis, Baris Gecer, Abhijeet Ghosh, Stefanos Zafeiriou</span><br/>
+            <em>TPAMI, 2021</em><br/>
+            <a href="https://arxiv.org/pdf/2112.05957" target="_blank">Paper</a> /
+            <a href="https://github.com/lattas/AvatarMe" target="_blank">Project Page</a> /
+            <a href="https://github.com/lattas/AvatarMe" target="_blank">Data</a> /
+            <a href="https://github.com/lattas/pytorch3d-Me" target="_blank">Code</a>
+        </div>
+      </div>
+
+      <!-- AvatarMe -->
+      <div class="paper">
+        <div class="paper-image-container">
+          <img src="images/publications/avatarme.png" alt="Paper Thumbnail" class="default" />
+          <img src="images/publications/avatarme.png" alt="Paper Thumbnail " class="hover" />
+        </div>
+        <div class="paper-details">
+            <strong><a href="https://arxiv.org/pdf/2003.13845.pdf" style="text-decoration:none" target="_blank">
+            AvatarMe: Realistically Renderable 3D Facial Reconstruction "in-the-wild"</a></strong><br/>
+            <span>Alexandros Lattas, Stylianos Moschoglou, Baris Gecer, Stylianos Ploumpis, Vasileios Triantafylloy, Abhijeet Ghosh, Stefanos Zafeiriou</span><br/>
+            <em>CVPR, 2020</em><br/>
+            <a href="https://arxiv.org/pdf/2003.13845" target="_blank">Paper</a> /
+            <a href="https://github.com/lattas/AvatarMe" target="_blank">Project Page</a> /
+            <a href="https://github.com/lattas/AvatarMe" target="_blank">Data</a> /
+            <a href="https://www.youtube.com/watch?v=fEsgeZPN8Uw&ab_channel=AlexandrosLattas" target="_blank">Video</a> /
+            <b>Press:</b> <a href="https://venturebeat.com/ai/ai-model-creates-3d-avatars-from-a-persons-picture/" target="_blank">VentureBeat</a>
+        </div>
+      </div>
+
+      <!-- TBGAN -->
+      <div class="paper">
+        <div class="paper-image-container">
+          <img src="images/publications/tbgan.png" alt="Paper Thumbnail" class="default" />
+          <img src="images/publications/tbgan.png" alt="Paper Thumbnail " class="hover" />
+        </div>
+        <div class="paper-details">
+            <strong><a href="https://arxiv.org/pdf/1909.02215" style="text-decoration:none" target="_blank">
+            Synthesizing Coupled 3D Face Modalities by Trunk-Branch Generative Adversarial Networks</a></strong><br/>
+            <span>Baris Gecer, Alexandros Lattas, Stylianos Ploumpis, Jiankang Deng, Athanasios Papaioannou, Stylianos Moschoglou, Stefanos Zafeiriou</span><br/>
+            <em>ECCV, 2020</em><br/>
+            <a href="https://arxiv.org/pdf/1909.02215" target="_blank">Paper</a> /
+            <a href="https://github.com/barisgecer/TBGAN" target="_blank">Code</a> /
+            <a href="https://www.youtube.com/watch?v=wehBCetIb7E&ab_channel=Bar%C4%B1%C5%9FGe%C3%A7er" target="_blank">Video</a>
+        </div>
+      </div>
+
+      <!-- Multi-View Facial -->
+      <!-- <div class="paper">
+        <div class="paper-image-container">
+          <img src="images/publications/practical_measurement.png" alt="Paper Thumbnail" class="default" />
+          <img src="images/publications/practical_measurement.png" alt="Paper Thumbnail " class="hover" />
+        </div>
+        <div class="paper-details">
+            <strong><a href="https://www.spinellis.gr/pubs/conf/2018-ICSE-SEIP-cmd-optimize/html/cmd-optimize.pdf" style="text-decoration:none" target="_blank">
+            Practical Measurement and Reconstruction of Spectral Skin Reflectance</a></strong><br/>
+            <span>Yuliya Gitlina, Giuseppe Claudio Guarnera, Daljit Singh Dhillon, Jan Hansen, Alexandros Lattas, Dinesh Pai, Abhijeet Ghosh</span><br/>
+            <em>Computer Graphics Forum, 2020</em><br/>
+            <a href="https://eprints.whiterose.ac.uk/163976/1/v39i4pp075_089.pdf" target="_blank">Paper</a> /
+            <a href="https://wp.doc.ic.ac.uk/rgi/project/practical-measurement-and-reconstruction-of-spectral-skin-reflectance/" target="_blank">Project Page</a>
+        </div>
+      </div> -->
+
+      <!-- Multi-View Facial -->
+      <!-- <div class="paper">
+        <div class="paper-image-container">
+          <img src="images/publications/multi-view_facial.png" alt="Paper Thumbnail" class="default" />
+          <img src="images/publications/multi-view_facial.png" alt="Paper Thumbnail " class="hover" />
+        </div>
+        <div class="paper-details">
+            <strong><a href="https://www.spinellis.gr/pubs/conf/2018-ICSE-SEIP-cmd-optimize/html/cmd-optimize.pdf" style="text-decoration:none" target="_blank">
+            Multi-View Facial Capture Using Binary Spherical Gradient Illumination</a></strong><br/>
+            <span>Alexandros Lattas, Mingqian Wang, Stefanos Zafeiriou, Abhijeet Ghosh</span><br/>
+            <em>ACM SIGGRAPH 2019 Posters, 2019</em><br/>
+            <a href="https://drive.google.com/file/d/1ZQ0utvO3AkNHwnUEGqLPJnEbbsTKk6d0/view" target="_blank">Paper</a> /
+            <a href="https://www.youtube.com/watch?v=qz_g3RYWtMA&ab_channel=AlexandrosLattas" target="_blank">Video</a>
+        </div>
+      </div> -->
+
+      <!-- Echoes From Space -->
+      <!-- <div class="paper">
+        <div class="paper-image-container">
+          <img src="images/publications/echoes_from_space.png" alt="Paper Thumbnail" class="default" />
+          <img src="images/publications/echoes_from_space_hover.png" alt="Paper Thumbnail " class="hover" />
+        </div>
+        <div class="paper-details">
+            <strong><a href="https://www.spinellis.gr/pubs/conf/2018-ICSE-SEIP-cmd-optimize/html/cmd-optimize.pdf" style="text-decoration:none" target="_blank">
+            Echoes From Space: Grouping Commands with Large-Scale Telemetry Data</a></strong><br/>
+            <span>Alexandros Lattas, Diomidis Spinellis</span><br/>
+            <em>ICSE, 2018</em><br/>
+            <a href="https://www.spinellis.gr/pubs/conf/2018-ICSE-SEIP-cmd-optimize/html/cmd-optimize.pdf" target="_blank">Paper</a> /
+            <a href="https://github.com/lattas/echoes-from-space" target="_blank">Code</a>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="section news">
+      <h2>News</h2>
+      <ul>
+        <li>Apr 2024: Invited panel talk at <a href="https://def-ix.delphiforum.gr/">
+            Delphi Economic Forum</a>, on the practical power of Generative AI.
+        </li>
+        <li>Feb 2024: Joined <a href="https://arvr.google.com/">Google AR &amp VR</a>
+            in London, UK, as a Research Scientist.</li>
+      </ul>
+    </section>
+  </div>
+</body>
 </html>
