@@ -25,6 +25,15 @@ body {
     border-radius: 50%;
     margin-bottom: 10px;
   }
+
+  a {
+  color: #2569ad;
+  text-decoration: none;
+  }
+
+  a:hover {
+    color: #458cd3;
+  }
   
   h1 {
     margin: 0;
